@@ -1,0 +1,59 @@
+@use 'media-query.scss' as bp;
+
+.hero {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bg-color-primary);
+	padding: 0 1.5rem;
+
+	@include bp.lg {
+		padding: 13rem 1.5rem 10rem;
+		height: 100%;
+	}
+}
+
+.hero-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+	max-width: 114rem;
+	margin: 0 auto;
+	column-gap: 5rem;
+
+	@include bp.md {
+		max-width: 114rem;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 45rem;
+		row-gap: 3rem;
+	}
+}
+
+.content {
+	display: grid;
+	row-gap: 2rem;
+	justify-items: start;
+}
+
+.subtitle {
+	font-size: 3.6rem;
+	margin-bottom: -2rem;
+}
+
+.title {
+	margin-bottom: -2rem;
+}
+
+.title-highlight {
+	color: var(--color-secondary);
+}
+
+.image-wrapper {
+	height: 40rem;
+	max-width: 50rem;
+	@include bp.md {
+		height: 100%;
+	}
+}

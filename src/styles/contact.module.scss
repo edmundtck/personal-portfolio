@@ -1,0 +1,87 @@
+@use './media-query.scss' as bp;
+
+.contact {
+	background-color: var(--bg-color-secondary);
+	padding: 10rem 1.5rem;
+}
+.contact-container {
+	max-width: 114rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 5rem;
+	justify-items: center;
+
+	@include bp.md {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+		row-gap: 3rem;
+	}
+}
+
+.content {
+	display: grid;
+	row-gap: 2rem;
+	align-content: flex-start;
+	max-width: 72rem;
+
+	@include bp.md {
+		text-align: center;
+	}
+}
+
+.actions {
+	list-style-type: none;
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 2rem;
+	justify-content: start;
+
+	@include bp.md {
+		justify-content: center;
+	}
+}
+
+.link {
+}
+
+.form-wrapper {
+	width: 40rem;
+
+	@include bp.sm {
+		width: 100%;
+	}
+}
+
+.form {
+	display: grid;
+	row-gap: 2rem;
+	padding: 5rem;
+	background-color: var(--bg-color-primary);
+	&-group {
+		display: grid;
+	}
+
+	&-label {
+		font-size: 1.8rem;
+	}
+	&-field {
+		padding: 1rem;
+		font-family: inherit;
+		border: none;
+		box-shadow: var(--box-shadow);
+		outline: none;
+	}
+	&-textarea {
+		height: 10rem;
+		padding: 1rem;
+		font-family: inherit;
+		resize: none;
+		border: none;
+		box-shadow: var(--box-shadow);
+		outline: none;
+	}
+	&-btn {
+		justify-self: end;
+	}
+}

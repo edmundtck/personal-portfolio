@@ -1,0 +1,36 @@
+@use './media-query.scss' as bp;
+
+:root {
+	--color-primary: #3e4357;
+	--color-secondary: #727796;
+	--bg-color-primary: #f4f9fc;
+	--bg-color-secondary: #fff;
+	--box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	--box-shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit; /* set the inherit here so for 3rd party css is not affected by universal selector */
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* 1rem = 10px, 10px / 16px = 62.5% | 10px of the default 16px from browser. easier to set rem */
+
+	@include bp.sm {
+		font-size: 50%;
+	}
+}
+
+/* Set the default style */
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 1.6rem;
+	color: var(--color-primary);
+}
