@@ -28,8 +28,8 @@ const Hero = ({ toggleNavbar, isToggleNavbar }) => {
 						I'm <span className={styles.titleHighlight}>Edmund</span> Teo.
 					</h1>
 					<p>
-						I'm a <strong>web developer</strong>. Always on a lookout to learn new things. Being resourceful
-						and helping people to solve problems.
+						I'm a <strong>web developer</strong>. Always on a lookout to learn new things and upgrade my
+						skills. I find joy in helping people to solve problems.
 					</p>
 					<AnchorLink className={btn} to="/#about" title="More about me" />
 				</div>

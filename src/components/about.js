@@ -16,10 +16,14 @@ const About = () => {
 				<div className={styles.content}>
 					<h2 className={heading2}>About Me</h2>
 					<p>
-						A web developer that is motivated by helping people and doing meaningful things. Like to look at
-						things from different perspective to solve problems. Always curious to figure out how thing
-						works.
+						A web developer whom is motivated by helping people and strive to make a difference. My creative
+						personality helps me to come out with out-of-the-box solutions.
 					</p>
+					<p>
+						With a curious mind, I tend to observe and analyse how things work which develops my keen
+						interest in learning new things and gaining more knowledge.
+					</p>
+					<p>Having a positive attitude also makes me a good team player.</p>
 					<AnchorLink className={btn} to="/#contact" title="Contact Me" />
 				</div>
 			</div>

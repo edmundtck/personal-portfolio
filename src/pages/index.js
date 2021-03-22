@@ -19,7 +19,7 @@ export default function Home() {
 
 	return (
 		<div className="wrapper">
-			<SEO />
+			<SEO title="Home" />
 			<Navbar toggleNavbar={toggleNavbar} />
 			<Hero isToggleNavbar={isToggleNavbar} toggleNavbar={toggleNavbar} />
 			<About />
