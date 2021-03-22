@@ -7,16 +7,16 @@
 module.exports = {
 	/* Your site config here */
 	siteMetadata: {
-		title: `Edmund Portfolio`,
-		description: `A portfolio website showing the works that I have done and my contact.`,
-		author: `Edmund`
+		title: `Edmund Teo`,
+		description: `Edmund Teo is a web developer. Always on a lookout to learn new things and upgrade his skills. He find joy in helping people to solve problems.`,
+		author: `Edmund Teo`
 	},
 	plugins: [
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Edmund Portfolio`,
-				short_name: `Edmund Portfolio`,
+				name: `Edmund Teo`,
+				short_name: `Edmund Teo`,
 				start_url: `/`,
 				background_color: `#3e4357`,
 				theme_color: `#3e4357`,
